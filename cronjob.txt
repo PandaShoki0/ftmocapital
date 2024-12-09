@@ -1,0 +1,43 @@
+* * * * * curl -s https://ftmocapital.com/cron
+* * * * * curl -s https://ftmocapital.com/cron/practice
+* * * * * curl -s https://ftmocapital.com/cron/schedule
+* * * * * curl -s curl -s https://ftmocapital.com/cron/investment/check
+* * * * * curl -s https://ftmocapital.com/cron/bot/result
+* * * * * curl -s https://ftmocapital.com/cron/bot/missed
+* * * * * curl -s https://ftmocapital.com/cron/mlm/ranks
+* * * * * curl -s https://ftmocapital.com/cron/forex/missed
+* * * * * curl -s https://ftmocapital.com/cron/mlm/daily
+* * * * * curl -s https://ftmocapital.com/cron/mlm/membership
+* * * * * curl -s https://ftmocapital.com/cron/provider/marketsToTable
+* * * * * curl -s https://ftmocapital.com/cron/provider/currencies
+* * * * * curl -s https://ftmocapital.com/cron/provider/currenciesToTable
+* * * * * curl -s https://ftmocapital.com/cron/provider/pairsToTable
+* * * * * curl -s https://ftmocapital.com/cron/provider/fetch/order
+* * * * * curl -s https://ftmocapital.com/cron/staking/profit
+* * * * * curl -s https://ftmocapital.com/cron/utxo/verify/transaction
+* * * * * curl -s https://ftmocapital.com/cron/mailwiz/send
+* * * * * curl -s https://ftmocapital.com/cron/provider/futuresToTable
+0,30 * * * * cd /home/ftmocapital/public_html && php artisan process:tmp-transaction-histories
+0 0 * * * cd /home/ftmocapital/public_html && php artisan process:crypto-news
+
+
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-practice
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-schedule
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-investment-check
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-bot-result
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-bot-missed
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-mlm-ranks
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-forex-missed
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-forex-result
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-mlm-daily
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-mlm-membership
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-marketsToTable
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-currencies
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-currenciesToTable
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-pairsToTable
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-fetch-order
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-staking-profit
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-utxo-verify-transaction
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-mailwiz-send
+* * * * * cd /home/ftmocapital/public_html && php artisan process:cron-provider-futuresToTable
